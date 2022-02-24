@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'LeagueMono';
+  src: url(../fonts/LeagueMono.ttf);
+}
+
+.container {
+  position: absolute;
+  height: 600px;
+  width: 300px;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 300px;
+  /* background: #F4F4F6; */
+
+  /* border: 1px solid #04AC55; */
+}
+
+.grad {
+  position: absolute;
+  height: 40px;
+  width: 280px;
+  background: linear-gradient(45deg, #50c878, #7cfc00, #00a36c, #808000);
+  background-size: 300% 300%;
+  animation: gradient 10s infinite;
+}
+
+.company-title {
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  color: black;
+  /* Couldn't figure out how to get this background to match the rest */
+  /* background: #F4F4F6; */
+  background: white;
+  font-size: 40px;
+  mix-blend-mode: screen;
+}
+
+.product-title {
+  padding-top: 90px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.product-image {
+  border: 2px dashed #04AC55;
+  margin: auto;
+  width: 245px;
+  height: 245px;
+  background: url(../images/ad-image.jpeg);
+  background-size: 100%;
+  padding-top: 20px;
+}
+
+.price {
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+
+}
+
+.buy-now {
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'LeagueMono';
+  color: #04AC55;
+  font-size: 25px;
+  font-weight: 100;
+  text-rendering: geometricPrecision;
+  animation: league infinite alternate 2s;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes league {
+  0% {
+    font-variation-settings: "wdth" 20;
+  }
+  100% {
+    font-variation-settings: "wdth" 180;
+  }
+}
